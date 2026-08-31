@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-wsl-ssh-agent
+      name: dsh-wsl-ssh-agent
+      config:
+        timeoutMs: 15000

@@ -1,0 +1,41 @@
+{
+  "name": "dsh-wsl-ssh-agent",
+  "version": "0.1.0",
+  "description": "Hint how to forward Windows OpenSSH agent into WSL.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/173787247/dsh-wsl-ssh-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/173787247/dsh-wsl-ssh-agent/issues"
+  },
+  "homepage": "https://github.com/173787247/dsh-wsl-ssh-agent#readme",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "wsl",
+    "ssh"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
