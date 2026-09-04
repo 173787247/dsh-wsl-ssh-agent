@@ -11,12 +11,13 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:ssh_agent_hint",
     order: 121,
-    text: "Use ssh_agent_hint for WSL/Windows interop: Hint how to forward Windows OpenSSH agent into WSL.",
+    text: "Use ssh_agent_hint when git SSH / github.com auth fails: checks SSH_AUTH_SOCK, ssh-add -l, ~/.ssh keys (names only), npiperelay. Never paste private keys. HTTPS push → cred_hint.",
   });
 
   ctx.tools.register({
     name: "ssh_agent_hint",
-    description: "Hint how to forward Windows OpenSSH agent into WSL.",
+    description:
+      "Diagnose WSL SSH agent socket, loaded keys, and Windows OpenSSH/npiperelay bridge (never returns key material).",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),
