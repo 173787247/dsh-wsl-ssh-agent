@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-ssh-agent",
-  "version": "0.1.0",
-  "description": "Hint how to forward Windows OpenSSH agent into WSL.",
+  "version": "0.2.0",
+  "description": "Diagnose WSL SSH agent socket, ssh-add keys, npiperelay bridge (no key material).",
   "license": "MIT",
   "repository": {
     "type": "git",
