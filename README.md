@@ -8,6 +8,18 @@ Part of **[dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit)**.
 
 [中文说明 → README.zh.md](./README.zh.md)
 
+## Where it sits
+
+Diagnoses the WSL SSH agent socket and the npiperelay bridge. It does not print key material.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["ssh_agent_hint"] --> ssh["agent socket and npiperelay"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.0** (full). Do not copy that matrix into this README.
+
+
 ## Compatibility
 
 | Field | Value |

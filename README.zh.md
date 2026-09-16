@@ -8,6 +8,18 @@ DeepSeek Harness 插件：提示如何把 Windows OpenSSH agent 转发进 WSL（
 
 [English → README.md](./README.md)
 
+## 在套件里的位置
+
+诊断 WSL SSH agent 套接字和 npiperelay 桥。不打印密钥内容。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["ssh_agent_hint"] --> ssh["agent 套接字与 npiperelay"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.2.0**（full）。不要把那份总表抄进本 README。
+
+
 ## 兼容性
 
 | 项 | 值 |
